@@ -1,3 +1,14 @@
 body {
-    background-image: url(blob:https://chatgpt.com/606c1d5e-da09-4663-9325-77981562757e);
+  background-image: url("https://images.unsplash.com/photo-1782926016946-3d12dfb649a4?auto=format&fit=crop&fm=jpg&q=85&w=2400");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+p {
+    color: white;
+}
+
+h1, h2, h3 {
+    color: white;
 }
