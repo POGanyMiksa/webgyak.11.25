@@ -68,6 +68,10 @@ lablecsor.classname = "row";
 const lablecoszlop = document.createElement("div");
 lablecoszlop.classname = "col-6"
 
+const lablecszoveg = document.createElement("p")
+lablecszoveg.id = "lablecszoveg";
+lablecszoveg.textcontent = "Köszönöm hogy megnézted"
+
 kivalasztas.append(opcio1, opcio2, opcio3)
 cimkontener.append(cimsor, cimoszlop, focim, alcim,kivalasztas);
 fokontener.append(sor, oszlop,fejezet1cim, fejezet1,fejezet2cim, fejezet2);
