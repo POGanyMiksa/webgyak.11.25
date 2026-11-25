@@ -58,7 +58,18 @@ const fejezet3 = document.createElement("p");
 fejezet3.id = "fejezet3";
 fejezet3.textContent = "placeholder";
 
+const lablec = document.createElement("div");
+lablec.classname = "container-fluid, text-center";
+lablec.id = "lablec";
+
+const lablecsor = document.createElement("div");
+lablecsor.classname = "row";
+
+const lablecoszlop = document.createElement("div");
+lablecoszlop.classname = "col-6"
+
 kivalasztas.append(opcio1, opcio2, opcio3)
 cimkontener.append(cimsor, cimoszlop, focim, alcim,kivalasztas);
 fokontener.append(sor, oszlop,fejezet1cim, fejezet1,fejezet2cim, fejezet2);
+lablec.append(lablecsor, lablecoszlop)
 document.body.append(cimkontener, fokontener);
