@@ -75,5 +75,5 @@ lablecszoveg.textcontent = "Köszönöm hogy megnézted"
 kivalasztas.append(opcio1, opcio2, opcio3)
 cimkontener.append(cimsor, cimoszlop, focim, alcim,kivalasztas);
 fokontener.append(sor, oszlop,fejezet1cim, fejezet1,fejezet2cim, fejezet2);
-lablec.append(lablecsor, lablecoszlop)
+lablec.append(lablecsor, lablecoszlop, lablecszoveg)
 document.body.append(cimkontener, fokontener);
