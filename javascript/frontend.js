@@ -1,5 +1,5 @@
 const cimkontener = document.createElement("div");
-cimkontener.className = "container bg-secondary text-center text-white";
+cimkontener.className = "container-fluid bg-secondary text-center text-white";
 cimkontener.style.transition = "background-color 0.5s, color 0.5s";
 
 const cimsor = document.createElement("div");
@@ -17,7 +17,7 @@ alcim.textContent = "ide kerül majd a szöveg";
 
 const fokontener = document.createElement("div");
 fokontener.id = "fokontener";
-fokontener.classname = "container text-left";
+fokontener.classname = "container-fluid text-left";
 
 const sor = document.createElement("div");
 sor.classname = "row";
