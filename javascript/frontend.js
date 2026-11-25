@@ -1,5 +1,5 @@
 const cimkontener = document.createElement("div");
-cimkontener.className = "container-fluid bg-secondary text-center text-white";
+cimkontener.className = "container bg-secondary text-center text-white";
 cimkontener.style.transition = "background-color 0.5s, color 0.5s";
 
 const cimsor = document.createElement("div");
@@ -16,10 +16,18 @@ alcim.id = "alcim";
 alcim.textContent = "ide kerül majd a szöveg";
 
 const fokontener = document.createElement("div");
-fokontener.classname = "container-fluid text-left";
+fokontener.id = "fokontener";
+fokontener.classname = "container text-left";
 
 const sor = document.createElement("div");
 sor.classname = "row";
+
+const sor2 = document.createElement("div");
+sor2.classname = "col"; 
+
+const sor3 = document.createElement("div");
+sor3.classname = "col"; 
+
 
 const oszlop = document.createElement("div");
 oszlop.className = "col-12";
@@ -52,6 +60,9 @@ fejezet2.id = fejezet2;
 fejezet2.textContent = "placeholder";
 
 kivalasztas.append(opcio1, opcio2, opcio3)
+sor2.append(fejezet1cim, fejezet1)
+sor3.append(fejezet2cim, fejezet2)
+sor.append(sor2, sor3,)
 cimkontener.append(cimsor, cimoszlop, focim, alcim,kivalasztas);
-fokontener.append(sor, oszlop,fejezet1cim, fejezet1,fejezet2cim, fejezet2);
+fokontener.append(sor, oszlop);
 document.body.append(cimkontener, fokontener);
