@@ -22,15 +22,6 @@ fokontener.classname = "container text-left";
 const sor = document.createElement("div");
 sor.classname = "row";
 
-const sor2 = document.createElement("div");
-sor2.classname = "col"; 
-
-const sor3 = document.createElement("div");
-sor3.classname = "col";
-
-const sor4 = document.createElement("div");
-sor4.classname = "col";
-
 const oszlop = document.createElement("div");
 oszlop.className = "col-12";
 
@@ -69,5 +60,5 @@ fejezet3.textContent = "placeholder";
 
 kivalasztas.append(opcio1, opcio2, opcio3)
 cimkontener.append(cimsor, cimoszlop, focim, alcim,kivalasztas);
-fokontener.append(sor, oszlop,fejezet1cim, fejezet1,fejezet2cim, fejezet2,fejezet3cim, fejezet3);
+fokontener.append(sor, oszlop,fejezet1cim, fejezet1,fejezet2cim, fejezet2);
 document.body.append(cimkontener, fokontener);
