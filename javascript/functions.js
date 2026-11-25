@@ -45,3 +45,4 @@ async function szovegbeolvasas(fajl, elem) {
 
 szovegbeolvasas("./forras/forras1.txt", fejezet1);
 szovegbeolvasas("./forras/forras2.txt", fejezet2);
+szovegbeolvasas("./forras/forras3.txt", fejezet3);

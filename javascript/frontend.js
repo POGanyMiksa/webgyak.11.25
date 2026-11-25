@@ -1,6 +1,6 @@
 const cimkontener = document.createElement("div");
-cimkontener.className = "container-fluid bg-secondary text-center text-white";
-cimkontener.style.transition = "background-color 0.5s, color 0.5s";
+cimkontener.className = "container-fluid text-center"
+cimkontener.id = "cimkontener";
 
 const cimsor = document.createElement("div");
 cimsor.classname = "row";
@@ -17,7 +17,7 @@ alcim.textContent = "ide kerül majd a szöveg";
 
 const fokontener = document.createElement("div");
 fokontener.id = "fokontener";
-fokontener.classname = "container-fluid text-left";
+fokontener.classname = "container text-left";
 
 const sor = document.createElement("div");
 sor.classname = "row";
@@ -26,15 +26,16 @@ const sor2 = document.createElement("div");
 sor2.classname = "col"; 
 
 const sor3 = document.createElement("div");
-sor3.classname = "col"; 
+sor3.classname = "col";
 
+const sor4 = document.createElement("div");
+sor4.classname = "col";
 
 const oszlop = document.createElement("div");
 oszlop.className = "col-12";
 
 const kivalasztas = document.createElement("select")
 kivalasztas.id = "kivalasztas";
-kivalasztas.textContent = "válassz!";
 
 const opcio1 = document.createElement("option");
 opcio1.textContent = "Válassz!";
@@ -56,13 +57,17 @@ const fejezet2cim = document.createElement("h2");
 fejezet2cim.textContent = "Newton élete";
 
 const fejezet2 = document.createElement("p");
-fejezet2.id = fejezet2;
+fejezet2.id = "fejezet2";
 fejezet2.textContent = "placeholder";
 
+const fejezet3cim = document.createElement("h2");
+fejezet3cim.textContent = "Elméletek eredete";
+
+const fejezet3 = document.createElement("p");
+fejezet3.id = "fejezet3";
+fejezet3.textContent = "placeholder";
+
 kivalasztas.append(opcio1, opcio2, opcio3)
-sor2.append(fejezet1cim, fejezet1)
-sor3.append(fejezet2cim, fejezet2)
-sor.append(sor2, sor3,)
 cimkontener.append(cimsor, cimoszlop, focim, alcim,kivalasztas);
-fokontener.append(sor, oszlop);
+fokontener.append(sor, oszlop,fejezet1cim, fejezet1,fejezet2cim, fejezet2,fejezet3cim, fejezet3);
 document.body.append(cimkontener, fokontener);
