@@ -1,5 +1,6 @@
 const cimkontener = document.createElement("div");
-cimkontener.className = "container-fluid bg-secondary text-center text white";
+cimkontener.className = "container-fluid bg-secondary text-center text-white";
+cimkontener.style.transition = "background-color 0.5s, color 0.5s";
 
 const cimsor = document.createElement("div");
 cimsor.classname = "row";
@@ -8,4 +9,49 @@ const cimoszlop = document.createElement("div");
 cimoszlop.classname = "col-12";
 
 const focim = document.createElement("h1");
-focim.textContent = "Sir Isaac Newton"
+focim.textContent = "Sir Isaac Newton";
+
+const alcim = document.createElement("h4");
+alcim.id = "alcim";
+alcim.textContent = "ide kerül majd a szöveg";
+
+const fokontener = document.createElement("div");
+fokontener.classname = "container-fluid text-left";
+
+const sor = document.createElement("div");
+sor.classname = "row";
+
+const oszlop = document.createElement("div");
+oszlop.className = "col-12";
+
+const kivalasztas = document.createElement("select")
+kivalasztas.id = "kivalasztas";
+kivalasztas.textContent = "válassz!";
+
+const opcio1 = document.createElement("option");
+opcio1.textContent = "Válassz!";
+
+const opcio2 = document.createElement("option");
+opcio2.textContent = "Első fejezet";
+
+const opcio3 = document.createElement("option");
+opcio3.textContent = "Második fejezet"
+
+const fejezet1cim = document.createElement("h2");
+fejezet1cim.textContent = "Bevezetés";
+
+const fejezet1 = document.createElement("p");
+fejezet1.id = fejezet1;
+fejezet1.textContent = "placeholder";
+
+const fejezet2cim = document.createElement("h2");
+fejezet2cim.textContent = "Newton élete";
+
+const fejezet2 = document.createElement("p");
+fejezet2.id = fejezet2;
+fejezet2.textContent = "placeholder";
+
+kivalasztas.append(opcio1, opcio2, opcio3)
+cimkontener.append(cimsor, cimoszlop, focim, alcim,kivalasztas);
+fokontener.append(sor, oszlop,fejezet1cim, fejezet1,fejezet2cim, fejezet2);
+document.body.append(cimkontener, fokontener);
